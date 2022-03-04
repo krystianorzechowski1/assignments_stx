@@ -5,7 +5,7 @@ from pyspark.sql import SparkSession
 
 def write_for_df(idx, dframe:pyspark.sql.DataFrame):
     dframe.write.format('jdbc').options(
-      url='jdbc:mysql://foo_db_1:3306/spark',
+      url='jdbc:mysql://db_1:3306/spark',
       driver='com.mysql.jdbc.Driver',
       dbtable=f'assignment_{idx}',
       user='spark',
