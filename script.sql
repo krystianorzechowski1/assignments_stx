@@ -1,5 +1,6 @@
-use spark;
-
+-- docker exec -it db_1 bash
+-- mysql -u spark -p
+USE spark;
 
 CREATE TABLE IF NOT EXISTS assignment_1
 (
