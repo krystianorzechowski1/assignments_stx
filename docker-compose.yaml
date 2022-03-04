@@ -3,6 +3,7 @@ version: '3'
 services:
 
   db:
+    container_name: db_1
     image: mysql:8.0.12
     environment:
     - MYSQL_ROOT_PASSWORD=123456
@@ -20,6 +21,7 @@ services:
 
 
   spark:
+    container_name: spark_1
     depends_on:
     - db
     build: .
